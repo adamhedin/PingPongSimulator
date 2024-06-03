@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ApplicationConfiguration {
     @Bean
-    @Qualifier("playerOne")
     public Player playerOne() {
         return new PlayerBuilder()
                 .setName("Player One")
